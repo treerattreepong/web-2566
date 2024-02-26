@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work5</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Anuphan&family=Athiti&family=Chakra+Petch:ital,wght@1,300&family=Fahkwang:wght@300&family=Kanit:wght@300;400&family=Noto+Sans+Thai:wght@300&family=Pixelify+Sans&family=Poppins:wght@300&display=swap');
+    * {
+        font-family: 'Kanit', sans-serif;
+        background-color: #0C0D0E;
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        text-align: center;
+        background-color: #191b1e;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        /* จัดให้ตรงกลางแนวนอน */
+        align-items: center;
+        /* จัดให้ตรงกลางแนวตั้ง */
+        height: 60px;
+    }
+    table {
+        margin: auto;
+    }
+
+    td h3 {
+        text-align: center;
+        color: palevioletred;
+        margin: 30px;
+    }
+    h2 {
+        margin-left: 1%;
+        color: white;
+    }
+    p {
+        display: flex;
+        justify-content: center;
+        /* จัดให้ตรงกลางแนวนอน */
+        align-items: center;
+        /* จัดให้ตรงกลางแนวตั้ง */
+        height: 30px;
+        margin: 0;
+        background-color: #191b1e;
+        color: gray;
+    }
+    table {
+        width: 60%;
+        border-collapse: collapse;
+    }
+    svg,small{
+        align-items: flex-start;
+    }
+    iframe {
+        display: block;
+        margin: auto;
+    }
+    a {
+  display: grid;
+  grid-template-columns: auto auto; /* สร้าง grid 2 คอลัมน์ที่ความกว้างของเนื้อหา */
+  align-items: center; /* จัดให้ตัวหนังสือและไอคอนอยู่ตรงกลางแนวตั้ง */
+  gap: 5px; /* ระยะห่างระหว่างไอคอนกับตัวหนังสือ */
+}
+header {
+  display: grid;
+  grid-template-columns: auto 1fr; /* สร้าง grid 2 คอลัมน์ คอลัมน์แรกจะมีขนาดตาม content คอลัมน์ที่สองจะเต็มพื้นที่ที่เหลือ */
+  align-items: center; /* จัดให้ element อยู่ตรงกลางแนวตั้ง */
+  padding: 10px 20px; /* ระยะห่างของ element จากขอบ */
+  /* background-color: #2a2d31; */
+  color: lightgrey;
+}
+
+a {
+    font-size: 20px;
+    background-color: #191b1e;
+  color: lightgrey;
+  text-decoration: none; /* ลบ underline ของ link */
+}
+
+svg {
+    background-color: #191b1e;
+  margin-right: 5px; /* ระยะห่างของ icon กับ text */
+}
+small{
+    background-color: #191b1e; 
+}
+a:hover{
+    color: palevioletred;
+}
+
+h1 {
+  margin: 0; /* ลบ margin ของ h1 */
+  justify-self: center; /* จัดให้ h1 อยู่ตรงกลางแนวนอน */
+  background-color: #191b1e;
+  color: palevioletred;
+}
+div.expo{
+    width: 80%;
+}
+img{
+    border-radius: 25px;
+}
+video{
+   border-radius: 25px;
+}
+</style>
+
+<body>
+    <header>
+        <a href="./index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5M10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5"/>
+          </svg><small>Home</small></a>
+        <h1>Work 5 React Native App</h1>
+    </header>
+    <table>
+        <tr>
+            <td>
+                <h3>Picture</h3>
+            </td>
+            <td>
+                <h3>VDO</h3>
+            </td>
+
+        </tr>
+        <tr>
+            <td class="content"><img src="./photo/pic.jpg" alt="pic" height="714" width="345" frameborder="0" scrolling="no" ></td>
+            <td><video src="./photo/vdo.mp4"height="714" width="345" frameborder="0" scrolling="no" controls autoplay></video>
+            </td>
+        </tr>
+    </table>
+    <div class="source">
+        <h2>Source Code</h2>
+        <div class="expo" data-snack-id="@treerat/work5" data-snack-platform="web" data-snack-preview="true" data-snack-theme="dark"
+            style="overflow:hidden;background:#0C0D0E;border:1px solid var(--color-border);border-radius:4px;height:505px;width:95%;margin: 10px auto;">
+        </div>
+        <script  src="https://snack.expo.dev/embed.js"></script>
+    </div>
+    <footer>
+        <p>&copy;2024 CapsuleZa</p>
+    </footer>
+</body>
+
+</html>
